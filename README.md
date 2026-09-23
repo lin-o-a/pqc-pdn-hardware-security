@@ -17,5 +17,6 @@ This project analyzes:
 - **Test Equipment:** Oscilloscope (transient $dV/dt$ measurement), Logic Analyzer, ChipWhisperer Lite/Nano
 
 ## Repository Structure
-- `/src` - STM32 C source files, PVD interrupt routines, and zeroization logic
+- `/src` - STM32 C source files, PVD interrupt routines, and zeroization logic => Root(main) code file is /src/Core/Src/main.c
 - `/docs` - Experimental setup diagrams, power rail decay measurements, and technical notes
+
