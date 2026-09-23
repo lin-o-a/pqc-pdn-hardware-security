@@ -80,7 +80,7 @@ V_BOR         -------\------------------------------ (Hardware Reset Line)
 To check zeroization result => look at this function in "main.c", while debug after voltage sag because of resistors load and PQC execution at the same time, the PVD_PVM_IRQHandler function will work out and later will be called reset function Check_BOR_Recovery where authorization_flag data will be zeroed but if to do not zero it in PVD handler, then it would hold value after BOR reset(voltage sag):
 
 <p align="center">
-  <img src="assets/BOR_zeroization_check.png" alt="Hardware evaluation setup showing PVD trigger and logic analyzer trace" width="600" />
+  <img src="assets/BOR_zeroization_check.png" alt="Hardware evaluation setup showing PVD trigger and logic analyzer trace" width="400" />
   <br>
   <em>Figure: Live PVD voltage sag detection and zeroization sequence.</em>
 </p>
