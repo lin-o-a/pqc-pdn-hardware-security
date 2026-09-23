@@ -76,11 +76,15 @@ V_PVD (2.56V) ----\---------------------------------
 V_BOR         -------\------------------------------ (Hardware Reset Line)
 
 ```
+
+To check zeroization result => look at this function in "main.c" while debug:
 <p align="center">
-  <img src="BOR_zeroization_check.png" alt="Hardware evaluation setup showing PVD trigger and logic analyzer trace" width="600" />
+  <img src="assets/BOR_zeroization_check.png" alt="Hardware evaluation setup showing PVD trigger and logic analyzer trace" width="600" />
   <br>
   <em>Figure: Live PVD voltage sag detection and zeroization sequence.</em>
 </p>
+
+> **Note:** Current Zeroization works when PVD works, PVD works for level 4 voltage sag, for some cases it still need additional defensive techniques. 
 
 Here is code of the function(in "src/Core/Src/main.c" file) that catches the voltage sag of level 4:
 ```c
